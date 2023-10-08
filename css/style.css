@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&family=Roboto&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto 0;
+
+}
+
+h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 9rem;
+    color: #C661D1;
+    text-shadow: 5px 5px 10px black;
+}
+
+h2 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 3rem;
+
+}
+
+h3 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+a {
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.topNav {
+    position: fixed;
+    top: 20px;
+    align-self: center;
+
+    width: 95%;
+    border: 2px black solid;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    height: 10vh;
+    background-color: #6830D1;
+    padding: 0 20px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/frontend-eindopdracht/images/header-background.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10%
+}
+
+.topNav img {
+    height: 100%;
+    object-fit: contain;
+}
+
+#toplogo {
+    height: 70%;
+
+}
+
+#toplogo:hover {
+    transform: rotate(1080deg);
+    transition: 1s;
+}
+
+#toplogo:active {
+    transform: rotate(-1080deg);
+    transition: 1s;
+}
+
+
+.topNav-links {
+
+    height: 100%;
+    min-width: 40vw;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+
+}
+
+
+.topNav-links div {
+    height: 100%;
+    padding: 0 40px;
+
+    flex: 1;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNav-links h4 {
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.topNav-links div:hover {
+    background-color: rgba(221, 160, 227, 0.5);
+
+    transition: 300ms;
+}
+
+.topNav-links div:active {
+    box-shadow: inset 3px 3px 3px black;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .topNav {
+        top: 0;
+        align-self: auto;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        width: 90%;
+        background-size: 100%
+    }
+
+
+
+
+    .topNav-links {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+
+
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px black solid;
+    background-image: url(/frontend-eindopdracht/images/tspins.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header p {
+    width: 50%;
+    font-family: 'Pixelify Sans', cursive;
+    color: #DDA0E3;
+
+}
+
+header div {
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+header a {
+    color: white;
+    border: 2px solid black;
+    background-color: #EE2A58;
+    padding: 10px 10px;
+    border-radius: 5px;
+    flex: 1;
+    width: 8rem;
+    text-align: center;
+}
+
+
+header a:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: 200ms;
+    background-color: #F1557A;
+
+
+}
+
+header a:active {
+    box-shadow: inset 1px 1px 3px black;
+
+
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    header p {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main h2 {
+    color: #A333AF;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+
+
+
+
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 200px 0;
+    background-color: #281671;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 80%;
+
+}
+
+.article-container article {
+    flex: 1;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 1vw;
+    justify-content: start;
+    align-items: start;
+    background-color: #A333AF;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.article-container article:hover {
+    background-color: #02A594;
+    flex: 2;
+    transition: 500ms;
+
+}
+
+.article-container article p {
+    font-size: 1.5rem;
+}
+
+
+
+span {
+    color: #6D00A3;
+}
+
+.article-container article img {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    border-bottom: 2px black solid;
+    object-fit: contain;
+
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    align-items: start;
+
+}
+
+.article-text {
+    padding: 20px;
+}
+
+
+
+.article-container a {
+    margin: 20px;
+
+    color: white;
+    border: 2px solid black;
+    background-color: #EE2A58;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.article-container a:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: 200ms;
+    background-color: #F1557A;
+
+
+}
+
+.article-container a:active {
+    box-shadow: inset 1px 1px 3px black;
+
+}
+
+@media (max-width: 480px) {
+    .article-container {
+        flex-direction: column;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+
+    border-top: black 2px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #02A594;
+    font-weight: bold;
+
+    padding: 100px 0;
+
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+}
+
+form .row {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+form .left {
+    flex: 1;
+}
+
+form .right {
+    flex: 1;
+    padding: 1rem 0;
+
+
+}
+
+input {
+    border-radius: 10px;
+    background-color: #01796D;
+    color: white;
+}
+
+input[type="text"] {
+    padding-left: 1rem;
+
+}
+
+input[type="date"] {
+    padding-left: 1rem;
+}
+
+input[type="email"] {
+    padding-left: 1rem;
+}
+
+#onderwerp {
+    padding-left: 1rem;
+    border-radius: 10px;
+
+    background-color: #01796D;
+    color: white;
+}
+
+
+
+.inputText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    gap: 10px;
+    flex: 1;
+}
+
+.inputRadio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
+}
+
+#inschrijven {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputTextArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 10px;
+
+}
+
+#jouw-vraag {
+    height: 100px;
+    margin: 10px 0;
+}
+
+
+input:invalid {
+    border: 3px solid red;
+}
+
+input:valid {
+    border: 3px solid green;
+}
+
+
+button {
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: #1A202C;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #283852;
+}
+
+@media (max-width: 480px) {
+
+    form {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+
+    background-color: #6830D1;
+    border: black 2px solid;
+}
+
+
+
+.botNav {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    max-height: 200px;
+
+
+}
+
+
+
+.botNav .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+
+
+.footerLogo {
+    height: 100%;
+}
+
+.footerLogo img {
+    max-height: 100px;
+    object-fit: cover;
+}
+
+#socialIcons {
+    height: 100%;
+    display: flex;
+    gap: 7px;
+    flex: 1;
+}
+
+#socialIcons img {
+    height: 100%;
+    min-height: 50px;
+    object-fit: cover;
+
+}
+
+
+
+.botNav .right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.botNav .right a {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.botNav .right a:hover {
+    color: white;
+}
+
+
+@media (max-width: 480px) {
+    .botNav {
+        flex-direction: column;
+        gap: 30px;
+        height: 90vh;
+        max-height: fit-content;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .botNav .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
