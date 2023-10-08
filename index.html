@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spin2win</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="container">
+
+
+        <nav class=topNav>
+
+            <a id=toplogo href="">
+                <img class=logo src="/frontend-eindopdracht/images/logo.svg" alt="logo">
+            </a>
+            <div class="topNav-links">
+                <div>
+                    <a href="https://tetr.io/">
+                        <h4>Tetr.io</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+                        <h4>About us</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://harddrop.com/wiki">
+                        <h4>HardDrop</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://four.lol/">
+                        <h4>Four.lol</h4>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <header>
+            <h1>T-spins</h1>
+            <p>In guideline-tetris games, T-spins are an important skill that players will have to learn as they
+                progress. This is
+                because taking t-spins will send the same amount of garbage lines to your opponent as a tetris does,
+                making
+                it a far more efficient method of attack. They can also easily be used to create spikes. This page will
+                help
+                you learn common stacking patterns you’ll be able to use in your games.
+            </p>
+            <div>
+                <a href="#patterns">Patterns</a>
+                <a href="#question">Form</a>
+            </div>
+        </header>
+
+
+        <main id="patterns">
+            <section>
+                <h2>Patterns</h2>
+
+                <div class="article-container">
+
+                    <article>
+                        <div class="article-content">
+                            <img src="/frontend-eindopdracht/images/kaidan.png" alt="kaidan">
+                            <div class="article-text">
+                                <h3>Kaidan</h3>
+                                <p class="stars"><span>★★★★★</span> </p>
+                                <p>The Kaidan, or Stairs, T-Spin setup, discovered by Tetris DS player TCM-WC, is a
+                                    prophecy
+                                    T-Spin
+                                    Double
+                                    method that takes advantage of a step formation beside an empty column. </p>
+                            </div>
+
+                        </div>
+                        <a href="https://harddrop.com/wiki/Kaidan_Setups">Read more...</a>
+                    </article>
+                    <article>
+                        <div class="article-content">
+                            <img src="/frontend-eindopdracht/images/imperialCross.png" alt="Imperial cross">
+                            <div class="article-text">
+                                <h3>Imperial Cross</h3>
+                                <p class="stars"><span>★★★</span>☆☆ </p>
+                                <p>Imperial Cross (sometimes Imperial Crossing) is a family of T-Spin setups in games
+                                    using
+                                    SRS.
+                                    It
+                                    uses
+                                    SRS's spin triple twist plus an additional 180 degree rotation to make a hurdle
+                                    double,
+                                    followed
+                                    by
+                                    a
+                                    standard T-Spin double.</p>
+                            </div>
+
+                        </div>
+                        <a href="https://harddrop.com/wiki/Imperial_Cross">Read more...</a>
+                    </article>
+                    <article>
+                        <div class="article-content">
+                            <img src="/frontend-eindopdracht/images/dtCannon.png" alt="kaidan">
+                            <div class="article-text">
+                                <h3>DT Cannon</h3>
+                                <p class="stars"><span>★★★★</span>☆ </p>
+                                <p>A setup where you can quickly send a TSD followed by a TST. First outlined by player
+                                    TKI. DT Cannon is a very popular TSD → TST opener. In Tetris variants without instant lockdown it is best to hold the soft drop button until the T-Spin Double has been completed. 
+                                </p>
+
+                            </div>
+                        </div>
+                        <a href="https://harddrop.com/wiki/Double_Triple_Cannon_Setups">Read more...</a>
+                    </article>
+                </div>
+
+            </section>
+        </main>
+
+
+        <section id=question class="form">
+
+            <h2>Contact form</h2>
+            <form>
+                <div class=row>
+                    <div class="inputText">
+                        <label class="left" for="first-name">First name:*</label>
+                        <input class="right" type="text" id="first-name" name="first-name" placeholder="First name"
+                            required>
+                    </div>
+
+
+                    <div class="inputText">
+                        <label class="left" for="last-name">Last name:*</label>
+                        <input class="right" type="text" id="last-name" name="last-name" placeholder="Last name"
+                            required>
+                    </div>
+                </div>
+
+                <div class="inputText">
+                    <label class="left" for="email">Email*</label>
+                    <input class="right" type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class=row>
+                    <div class="inputText">
+                        <label class="left" for="first-name">Place:*</label>
+                        <input class="right" type="text" id="living-place" name="living-place" placeholder="Place"
+                            required>
+                    </div>
+
+                    <div class="inputText">
+                        <label class="left" for="birthdate">Date of birth*</label>
+                        <input class="right" type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                </div>
+                <div class="inputText">
+                    <label class="left" for="onderwerp">Category of question*</label>
+                    <select class="right" id="onderwerp" name="onderwerp" required>
+                        <option value="">Choose category</option>
+                        <option value="Erik">tspin</option>
+                        <option value="Martijn">tetris</option>
+                        <option value="Bas">pc</option>
+                        <option value="Antwan">combo</option>
+                    </select>
+                </div>
+
+                <div class="inputTextArea">
+                    <label class="left" for="jouw-vraag">Your question*</label>
+                    <input type="textarea" id="jouw-vraag" name="jouw-vraag" required>
+                </div>
+
+                <section class="inputRadio">
+                    <label class="left" for="inschrijven">Apply to our newsletter*</label>
+                    <div class="right" id="inschrijven">
+                        <div class="radiobuttons">
+                            <input type="radio" id="ja" name="menu" value="ja">
+                            <label for="ja">Yes</label>
+                        </div>
+
+                        <div class="radiobuttons">
+                            <input type="radio" id="nee" name="menu" value="nee">
+                            <label for="nee">No</label>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="inputCheckbox">
+                    <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden" required>
+                    <label for="voorwaarden">I accept the Terms and Conditions*</label>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            <div>*Required</div>
+            </form>
+
+
+        </section>
+
+        <footer>
+            <nav class="botNav">
+                <section class=left>
+                    <div class="footerLogo">
+
+                        <img class=logo src="/frontend-eindopdracht/images/logo.svg" alt="logo">
+
+                    </div>
+                    <div>
+                        <p>Copyright 2023 Yiming Li</p>
+                    </div>
+                    <div id="socialIcons">
+
+                        <a href="">
+                            <img src="/frontend-eindopdracht/images/instagram.svg" alt="instagram">
+                        </a>
+
+                        <a href="">
+                            <img src="/frontend-eindopdracht/images/facebook.svg" alt="facebook">
+                        </a>
+
+                        <a href="">
+                            <img src="/frontend-eindopdracht/images/youtube.svg" alt="youtube">
+
+                        </a>
+
+                    </div>
+
+
+                </section>
+                <section class=right>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Contact</a>
+                </section>
+
+            </nav>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
