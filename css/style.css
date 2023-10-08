@@ -66,7 +66,7 @@ a {
 
 .topNav {
     position: fixed;
-    top: 20px;
+    top: 3vh;
     align-self: center;
 
     width: 95%;
@@ -163,14 +163,15 @@ a {
 @media (max-width: 480px) {
     .topNav {
         top: 0;
-        align-self: auto;
+        align-self: stretch;
         position: relative;
         flex-direction: column;
         height: auto;
         border: none;
         border-radius: 0;
         width: 90%;
-        background-size: 100%
+        background-size: 100%;
+        padding-top: 20px;
     }
 
 
@@ -215,6 +216,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    gap: 50px;
 
 }
 
@@ -226,7 +228,6 @@ header p {
 }
 
 header div {
-    padding-top: 50px;
     display: flex;
     gap: 20px;
 
@@ -353,7 +354,6 @@ span {
     width: 100%;
     height: 40%;
     padding: 10px;
-    border-bottom: 2px black solid;
     object-fit: contain;
 
 }
@@ -368,6 +368,8 @@ span {
 }
 
 .article-text {
+    border-top: 2px black solid;
+
     padding: 20px;
 }
 
